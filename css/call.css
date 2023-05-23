@@ -1,0 +1,44 @@
+.textBox {
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  margin: 80px auto 20px auto;
+  position: relative;
+  overflow: auto;
+}
+.callBtn-box,
+.calling-box {
+  margin: 0 60px;
+  display: grid;
+  grid-template-rows: 70px 70px 70px 70px 70px;
+  grid-template-columns: 70px 70px 70px;
+  grid-gap: 10px;
+}
+.calling-box {
+  margin-top: 100px;
+}
+.callBtn-box button,
+.calling-box button {
+  border: none;
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.callBtn-delete {
+  font-size: 25px;
+  margin: 15px auto;
+  cursor: pointer;
+  margin-left: 100px;
+}
+.callBtn,
+.hangUP {
+  background-color: #15cd43;
+  color: white;
+  width: 70px;
+  margin-left: 80px;
+}
+.hangUP {
+  background-color: red;
+  transform: rotate(135deg);
+}

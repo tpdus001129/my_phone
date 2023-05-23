@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/call.css" />
+    <link rel="stylesheet" href="./css/weather.css" />
+    <link rel="stylesheet" href="./css/clock.css" />
+    <title>my phone</title>
+  </head>
+  <body>
+    <div class="phone">
+      <div class="blackBox">
+        <div class="apple-box">
+          <i class="fa-brands fa-apple"></i>
+        </div>
+      </div>
+
+      <div class="whiteBox">
+        <div class="textBox"></div>
+        <div class="callBtn-box">
+          <button class="number" value="1">1</button>
+          <button class="number" value="2">2</button>
+          <button class="number" value="3">3</button>
+          <button class="number" value="4">4</button>
+          <button class="number" value="5">5</button>
+          <button class="number" value="6">6</button>
+          <button class="number" value="7">7</button>
+          <button class="number" value="8">8</button>
+          <button class="number" value="9">9</button>
+          <button class="number" value="*">*</button>
+          <button class="number" value="0">0</button>
+          <button class="number" value="#">#</button>
+          <button class="callBtn"><i class="fa-solid fa-phone"></i></button>
+          <div class="callBtn-delete">
+            <i class="fa-solid fa-delete-left"></i>
+          </div>
+        </div>
+
+        <div class="calling-box">
+          <button><i class="fa-solid fa-microphone-slash"></i></button>
+          <button><i class="fa-regular fa-keyboard"></i></button>
+          <button><i class="fa-solid fa-volume-high"></i></button>
+          <button><i class="fa-solid fa-plus"></i></button>
+          <button><i class="fa-solid fa-video"></i></button>
+          <button><i class="fa-solid fa-circle-user"></i></button>
+          <button class="hangUP"><i class="fa-solid fa-phone"></i></button>
+        </div>
+
+        <div class="weather-box">
+          <h2>날씨</h2>
+          <form>
+            <input
+              type="text"
+              placeholder="Please search in English"
+              class="input"
+            />
+            <button type="submit" class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="main-cityBtn">
+              <i class="fa-solid fa-question"></i>
+            </button>
+            <div class="main-city">
+              <table>
+                <tr>
+                  <th colspan="2">주요 도시</th>
+                </tr>
+                <tr>
+                  <td>서울</td>
+                  <td>seoul</td>
+                </tr>
+                <tr>
+                  <td>인천</td>
+                  <td>incheon</td>
+                </tr>
+                <tr>
+                  <td>세종</td>
+                  <td>sejong</td>
+                </tr>
+                <tr>
+                  <td>대전</td>
+                  <td>daejeon</td>
+                </tr>
+                <tr>
+                  <td>대구</td>
+                  <td>daegu</td>
+                </tr>
+                <tr>
+                  <td>광주</td>
+                  <td>gwangju</td>
+                </tr>
+                <tr>
+                  <td>울산</td>
+                  <td>ulsan</td>
+                </tr>
+                <tr>
+                  <td>부산</td>
+                  <td>busan</td>
+                </tr>
+                <tr>
+                  <td>제주</td>
+                  <td>jeju</td>
+                </tr>
+              </table>
+            </div>
+          </form>
+
+          <div class="result-weather">
+            <div class="city"></div>
+            <div class="temp"></div>
+            <div class="weather"></div>
+            <div class="icon"></div>
+          </div>
+        </div>
+
+        <div class="home-box">
+          <i class="fa-solid fa-house home-btn"></i>
+        </div>
+      </div>
+
+      <div class="line">
+        <div class="time-box">
+          <div class="time"></div>
+        </div>
+        <div class="notch"></div>
+        <div class="battery"></div>
+      </div>
+
+      <div class="bottom">
+        <div class="homeGreenBtn homeCallBtn">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <div class="homeGreenBtn homeWeatherBtn">
+          <i class="fa-solid fa-cloud-moon"></i>
+        </div>
+        <div class="homeGreenBtn homeClockBtn">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/home.js"></script>
+  <script src="./js/call.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/clock.js"></script>
+</html>

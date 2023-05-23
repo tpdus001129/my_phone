@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(72, 72, 72);
+  user-select: none;
+}
+.time-box {
+  width: 75px;
+}
+.time {
+  font-size: 20px;
+  text-align: center;
+  margin: 5px auto;
+}
+.battery {
+  background-color: #58e77c;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  width: 38px;
+  height: 25px;
+  margin: 5px auto;
+}
+.phone {
+  width: 350px;
+  height: 600px;
+  border: solid 10px black;
+  border-radius: 30px;
+  margin: 50px auto;
+  background-image: url("../img/me.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.line {
+  display: flex;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+}
+.notch {
+  width: 200px;
+  height: 30px;
+  background-color: black;
+  border-radius: 0 0 20px 20px;
+}
+
+.bottom {
+  font-size: 40px;
+  color: white;
+  border-radius: 20px;
+  background-color: rgba(229, 229, 229, 0.4);
+  position: absolute;
+  bottom: 1%;
+  left: 25px;
+  width: 300px;
+  height: 70px;
+  display: flex;
+}
+.bottom div {
+  width: 100px;
+  border-radius: 15px;
+  text-align: center;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+.homeCallBtn {
+  background-color: #15cd43;
+}
+.homeWeatherBtn {
+  background-color: #81bef7;
+}
+.homeClockBtn {
+  background-color: #2e2e2e;
+}
+/* 화면 */
+.whiteBox {
+  background-color: white;
+  border-radius: 20px;
+  width: 350px;
+  height: 600px;
+  display: none;
+  z-index: 2;
+  position: absolute;
+  /* z-index 안먹으면 position 추가 */
+}
+.home-box {
+  background-color: lightgrey;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  width: 350px;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 20px 20px;
+}
+.home-btn {
+  cursor: pointer;
+}
+.blackBox {
+  background-color: black;
+  width: 350px;
+  height: 600px;
+  display: none;
+  z-index: 4;
+  position: absolute;
+}
+.apple-box {
+  color: white;
+  font-size: 130px;
+  text-align: center;
+  margin-top: 200px;
+}
