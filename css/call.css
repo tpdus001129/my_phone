@@ -15,6 +15,9 @@
   grid-template-columns: 70px 70px 70px;
   grid-gap: 10px;
 }
+.star {
+  margin-top: 15px;
+}
 .calling-box {
   margin-top: 100px;
 }

@@ -1,1 +1,136 @@
-/*  */
+.clock-box {
+  margin-top: 80px;
+}
+.clock-topbox {
+  display: flex;
+  justify-content: flex-end;
+}
+.clock-topbox h2 {
+  margin: 0 auto 30px auto;
+  transform: translateX(35px);
+}
+.clockPlus {
+  margin-right: 10px;
+}
+.clockBtn {
+  background-color: #f7d358;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+/* 알람 세부 기능 */
+.clockSetup {
+  z-index: 5;
+  position: absolute;
+  width: 350px;
+  height: 420px;
+  background-color: #f5ecce;
+  text-align: center;
+}
+.clockSetup select {
+  width: 100px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-top: 30px;
+}
+.clockSetup2 {
+  margin: 40px auto;
+  font-size: 17px;
+}
+.clockSetup2 table,
+.clockSetup2 td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px;
+  width: 300px;
+}
+.clockSetup2 input {
+  margin: 10px 0;
+}
+.clockCancle {
+  margin-right: 20px;
+}
+.clock-bottombox {
+  display: flex;
+  justify-content: center;
+}
+.clockList {
+  z-index: 1;
+  position: absolute;
+  width: 350px;
+  height: 420px;
+  overflow: scroll;
+}
+.clockList::-webkit-scrollbar {
+  display: none;
+}
+
+/* 자바스크립트로 생성 */
+.clock {
+  background-color: #a4a4a4;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px black;
+  font-size: 30px;
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px 10px 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.clockText {
+  width: 270px;
+  line-height: 50px;
+  font-size: 25px;
+}
+.clockDelete {
+  font-size: 30px;
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.clock-font {
+  font-size: 30px;
+}
+
+/* 토글 버튼 */
+#tryAlert {
+  display: none;
+}
+label {
+  display: block;
+  width: 40px;
+  height: 20px;
+  background-color: #a4a4a4;
+  border-radius: 20px;
+  position: relative;
+  margin: 0 auto;
+}
+label::after {
+  content: "";
+  position: absolute;
+  left: 2.5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: white;
+  transition: all 0.5s;
+}
+input:checked + label::after {
+  left: calc(100% - 17.5px);
+  transition: all 0.5s;
+}
+input:checked + label {
+  background-color: #15cd43;
+}

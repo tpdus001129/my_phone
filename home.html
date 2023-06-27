@@ -16,16 +16,20 @@
     <link rel="stylesheet" href="./css/weather.css" />
     <link rel="stylesheet" href="./css/clock.css" />
     <title>my phone</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body>
     <div class="phone">
-      <div class="blackBox">
-        <div class="apple-box">
-          <i class="fa-brands fa-apple"></i>
+      <div class="line">
+        <div class="time-box">
+          <div class="time"></div>
         </div>
+        <div class="notch"></div>
+        <div class="battery"></div>
       </div>
 
       <div class="whiteBox">
+        <!-- 전화 -->
         <div class="textBox"></div>
         <div class="callBtn-box">
           <button class="number" value="1">1</button>
@@ -37,7 +41,7 @@
           <button class="number" value="7">7</button>
           <button class="number" value="8">8</button>
           <button class="number" value="9">9</button>
-          <button class="number" value="*">*</button>
+          <button class="number" value="*"><div class="star">*</div></button>
           <button class="number" value="0">0</button>
           <button class="number" value="#">#</button>
           <button class="callBtn"><i class="fa-solid fa-phone"></i></button>
@@ -54,16 +58,14 @@
           <button><i class="fa-solid fa-video"></i></button>
           <button><i class="fa-solid fa-circle-user"></i></button>
           <button class="hangUP"><i class="fa-solid fa-phone"></i></button>
+          <audio class="callAudio" src="./통화음.mp3" loop></audio>
         </div>
 
+        <!-- 날씨 -->
         <div class="weather-box">
           <h2>날씨</h2>
           <form>
-            <input
-              type="text"
-              placeholder="Please search in English"
-              class="input"
-            />
+            <input type="text" placeholder="Please search in English" id="weatherInput" />
             <button type="submit" class="search">
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
@@ -123,27 +125,101 @@
           </div>
         </div>
 
+        <!-- 알람 -->
+        <div class="clock-box">
+          <div class="clock-topbox">
+            <h2>알람</h2>
+            <div class="clockPlus clockBtn"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="clockList"></div>
+
+          <div class="clockSetup">
+            <select name="select" id="select1">
+              <option hidden>AM / PM</option>
+              <option>오전</option>
+              <option>오후</option>
+            </select>
+            <select name="select" id="select2">
+              <option hidden>시</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+            <select name="select" id="select3">
+              <option hidden>분</option>
+              <option>00</option>
+              <option>05</option>
+              <option>10</option>
+              <option>15</option>
+              <option>20</option>
+              <option>25</option>
+              <option>30</option>
+              <option>35</option>
+              <option>40</option>
+              <option>45</option>
+              <option>50</option>
+              <option>55</option>
+            </select>
+
+            <div class="clockSetup2">
+              <table>
+                <tr>
+                  <td>레이블</td>
+                  <td><input id="label" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>반복</td>
+                  <td>
+                    <input type="checkbox" name="day" value="월" />월
+                    <input type="checkbox" name="day" value="화" />화
+                    <input type="checkbox" name="day" value="수" />수
+                    <input type="checkbox" name="day" value="목" />목<br />
+                    <input type="checkbox" name="day" value="금" />금
+                    <input type="checkbox" name="day" value="토" />토
+                    <input type="checkbox" name="day" value="일" />일
+                  </td>
+                </tr>
+                <tr>
+                  <td>다시<br />알림</td>
+                  <td><input type="checkbox" id="tryAlert" /><label for="tryAlert"></label></td>
+                </tr>
+              </table>
+            </div>
+            <div class="clock-bottombox">
+              <div class="clockCancle clockBtn">취소</div>
+              <div class="clockSave clockBtn">저장</div>
+            </div>
+          </div>
+        </div>
+
         <div class="home-box">
           <i class="fa-solid fa-house home-btn"></i>
         </div>
       </div>
 
-      <div class="line">
-        <div class="time-box">
-          <div class="time"></div>
+      <div class="blackBox">
+        <div class="apple-box">
+          <i class="fa-brands fa-apple"></i>
         </div>
-        <div class="notch"></div>
-        <div class="battery"></div>
       </div>
 
       <div class="bottom">
-        <div class="homeGreenBtn homeCallBtn">
+        <div class="homeIconBtn homeCallBtn">
           <i class="fa-solid fa-phone"></i>
         </div>
-        <div class="homeGreenBtn homeWeatherBtn">
+        <div class="homeIconBtn homeWeatherBtn">
           <i class="fa-solid fa-cloud-moon"></i>
         </div>
-        <div class="homeGreenBtn homeClockBtn">
+        <div class="homeIconBtn homeClockBtn">
           <i class="fa-solid fa-clock"></i>
         </div>
       </div>

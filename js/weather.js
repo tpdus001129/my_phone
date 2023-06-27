@@ -1,28 +1,20 @@
-const homeWeatherBtn = document
-  .querySelector(".homeWeatherBtn")
-  .addEventListener("click", function () {
-    document.querySelector(".weather-box").style.display = "block";
-    textBox.style.display = "none";
-  });
+document.querySelector(".homeWeatherBtn").addEventListener("click", function () {
+  document.querySelector(".weather-box").style.display = "block";
+  textBox.style.display = "none";
+});
 
 function weather() {
   var cityName = "";
-  const input = document.querySelector(".input");
-
-  input.addEventListener("input", function (e) {
+  const weatherInput = document.querySelector("#weatherInput");
+  weatherInput.addEventListener("input", function (e) {
     cityName = e.target.value;
   });
-
-  input.addEventListener("click", function () {
-    input.value = null;
+  weatherInput.addEventListener("click", function () {
+    weatherInput.value = "";
   });
-
-  document
-    .querySelector(".main-cityBtn")
-    .addEventListener("click", function (e) {
-      e.preventDefault();
-    });
-
+  document.querySelector(".main-cityBtn").addEventListener("click", function (e) {
+    e.preventDefault();
+  });
   document.querySelector(".search").addEventListener("click", function (e) {
     e.preventDefault();
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&lang=kr&appid=fbd9e9bae75a4be74df0467fdb3f943e&units=metric`;
@@ -33,7 +25,7 @@ function weather() {
         const temp = document.querySelector(".temp");
         const weather = document.querySelector(".weather");
         const icon = document.querySelector(".icon");
-        const iconImg = data.weather[0].icon;
+        const iconImg = data.weather[0].icon.substring(0, 2);
 
         temp.innerHTML = "기온 : " + data.main.temp.toFixed(1) + "°C";
         weather.innerHTML = "날씨 : " + data.weather[0].main;
