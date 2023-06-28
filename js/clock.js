@@ -4,7 +4,7 @@ document.querySelector(".homeClockBtn").addEventListener("click", function () {
   $(".textBox, .clockSetup").css("display", "none");
 });
 
-// 추가버튼 (option, label, day값 초기화)
+// 추가버튼 (option, label, day, tryAlert 초기화)
 document.querySelector(".clockPlus").addEventListener("click", function () {
   clockSetup.style.display = "block";
   const select = document.querySelectorAll('select[name="select"]');
@@ -15,6 +15,7 @@ document.querySelector(".clockPlus").addEventListener("click", function () {
   for (let i = 0; i < day.length; i++) {
     day[i].checked = false;
   }
+  document.querySelector("#tryAlert").checked = false;
 });
 // 취소버튼
 document.querySelector(".clockCancle").addEventListener("click", function () {
