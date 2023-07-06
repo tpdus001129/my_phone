@@ -13,20 +13,20 @@
 
 ## 1. 전화
 전화번호를 입력하고 통화 버튼을 누르면 '통화음'과 함께 통화화면으로 전환된다.<br/><br/>
-![전화](https://github.com/tpdus001129/test/assets/113432040/2abfa6e9-1f73-471a-b8a9-5f12992cbca4) 
+![전화](https://github.com/tpdus001129/my_phone/assets/113432040/673c0663-5622-49c3-9093-72ce9e1bc514)
 <br/><br/>
 
 ## 2. 날씨
 지역을 검색하면 지역이름, 현재기온, 날씨아이콘이 출력된다.<br/>
 [openweathermap api 이용](https://openweathermap.org/)<br/><br/>
-![날씨](https://github.com/tpdus001129/test/assets/113432040/b516d241-9e90-46ab-9805-fb02adab6e58)
+![날씨](https://github.com/tpdus001129/my_phone/assets/113432040/8d631a16-2150-4755-a271-996064f3f635)
 <br/><br/>
 
 ## 3. 알람
 시간, 레이블, 요일을 선택하면 알람리스트가 생성된다.<br/><br/>
-![알람](https://github.com/tpdus001129/test/assets/113432040/f0659096-b837-4af1-91ab-e5dcbe519848)
+![알람](https://github.com/tpdus001129/my_phone/assets/113432040/9e43fe8e-fe02-497b-b4fa-2f61a9d672e6)
 <br/><br/>
 
 ## 4. 배터리
 앱을 실행할때마다 배터리가 10씩 닳아지고 0이 되면 휴대폰이 꺼진다.<br/><br/>
-![배터리 기능](https://github.com/tpdus001129/test/assets/113432040/05c9a5be-fc95-43ba-9e68-54a9756af741)
+![배터리 기능](https://github.com/tpdus001129/my_phone/assets/113432040/40c1cda1-a597-4417-a488-6ba1746f8d80)
